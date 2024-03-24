@@ -1,7 +1,14 @@
 const getCategories = () => {
-    fetch('https://fakestoreapi.com/products/category/jewelery')
+    fetch('https://fakestoreapi.com/products/category')
             .then(res=>res.json())
             .then(json=>console.log(json))
+}
+
+const getProducts = () => {
+    fetch('https://fakestoreapi.com/products')
+        .then(res => res.json())
+        .then(json => console.log(json))
+        .catch(error => console.error('Error fetching products:', error));
 }
 
 /*Array(4) [ {…}, {…}, {…}, {…} ]
