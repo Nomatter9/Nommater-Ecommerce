@@ -18,7 +18,7 @@
 
         const categories = [];
         const getCategories = () => {
-            fetch('https://fakestoreapi.com/products/category/jewelery')
+            fetch('https://fakestoreapi.com/products/categories')
                 .then(res => res.json())
                 .then(data => {
                     categories.push(...data); // Push fetched data to categories array
@@ -34,7 +34,7 @@
 
             categories.forEach(cat => {
         // // Truncate description to a certain length, e.g., 100 characters
-        const truncatedDescription = cat.description.length > 80 ? cat.description.substring(0, 80) + '...' : cat.text;
+        // const truncatedDescription = cat.description.length > 80 ? cat.description.substring(0, 80) + '...' : cat.text;
 
              document.getElementById('categories').innerHTML += `
              <div class="col-3 ">
@@ -42,7 +42,6 @@
                 <img src="${cat.image}" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">${cat.title}</h5>
-                  <p class="card-text">${truncatedDescription}</p>
                   <a href="#" class="btn btn-primary">View</a>
                 </div>
             </div>
