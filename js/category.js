@@ -1,8 +1,10 @@
 const getCategories = () => {
     fetch('https://fakestoreapi.com/products/category')
-            .then(res=>res.json())
-            .then(json=>console.log(json))
+        .then(res => res.json())
+        .then(json => console.log(json))
+        .catch(error => console.error('Error fetching categories:', error));
 }
+
 
 const getProducts = () => {
     fetch('https://fakestoreapi.com/products')
@@ -1189,4 +1191,4 @@ title: "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Brace
 ​
 length: 4
 ​
-<prototype>: Array []
+<prototype>: Array []*/
