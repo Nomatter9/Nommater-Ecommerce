@@ -33,12 +33,12 @@
               image: '../index-files/image-file/ring.jpg',
               price: '1.245$',
               reviewsLink: 'https://fakestoreapi.com/products',
-              brand: "women's clothing",
-              url: "../products.html?category=women's clothing",
+              brand: "White Gold Plated Princess",
+              url: "../products.html?category=jewelery",
               addToCartLink: '#',
           },
           {
-              title:'Woman Clothing Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita molestiae suscipit laborum at aliquid facere. Commodi sed exercitationem iusto asperiores a possimus explicabo amet architecto dolores, harum hic voluptatem delectus!' ,
+              title:"men's clothing Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita molestiae suscipit laborum at aliquid facere. Commodi sed exercitationem iusto asperiores a possimus explicabo amet architecto dolores, harum hic voluptatem delectus!" ,
               image: '../index-files/image-file/hood.jpg',
               price: '2.345$',
               reviewsLink: 'https://fakestoreapi.com/products',
@@ -56,12 +56,12 @@
             url: '../products.html?category=electronics',
           },
          {
-            title: 'Mens Cotton Jacket Lorem ipsum dolor sit amet consectetur adipisicing elit Expedita molestiae suscipit laborum at aliquid facereCommodi sed exercitationem iusto asperiores a possimus explicabo amet architecto dolores harum hic voluptatem delectus',
+            title: "women's clothing Lorem ipsum dolor sit amet consectetur adipisicing elit Expedita molestiae suscipit laborum at aliquid facereCommodi sed exercitationem iusto asperiores a possimus explicabo amet architecto dolores harum hic voluptatem delectus",
             image: '../index-files/image-file/jackets.jpg',
             price: '1.245$',
             reviewsLink: "https://fakestoreapi.com/products",
-            brand: 'jewelery',
-            url: '../products.html?category=jewelery',
+            brand: "women's clothing",
+            url: "../products.html?category=women's clothing",
               addToCartLink: '#',
           },
       ];
@@ -109,8 +109,9 @@ cards.forEach(cardData => {
     reviewsLink.textContent = 'reviews';
 
     let title = document.createElement('h5');
-    title.classList.add('card-title');
-    title.textContent = cardData.title; 
+title.classList.add('card-title');
+title.textContent = cardData.title;
+title.style.marginTop = '2rem'; 
 
     let addToCartBtn = document.createElement('a');
     addToCartBtn.href = cardData.addToCartLink;

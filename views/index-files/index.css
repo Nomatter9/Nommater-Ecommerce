@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
@@ -46,7 +46,7 @@
 
 
 .card h5 {
-    /* overflow: hidden; */
+    overflow: hidden;
     height: 55px;
     font-weight: 300;
     font-size: 1rem;
@@ -155,17 +155,17 @@
     text-decoration: none;
     outline: 0;
     /* box-shadow: -1px 6px 19px rgba(247, 129, 10, 0.25); */
-    /* border-radius: 100px; */
+    border-radius: 100px;
 }
 .btn-warning:hover {
     background: var(--btnbghover);
     color: var(--btnfontcolorhover);
-    /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35);*/
-} 
+    /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
+}
 .btn-check:focus + .btn-warning, .btn-warning:focus {
     background: var(--btnbghover);
     color: var(--btnfontcolorhover);
-    box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35);
+    /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
 }
 .btn-warning:active:focus {
     box-shadow: 0 0 0 0.25rem var(--btnactivefs);
@@ -173,15 +173,14 @@
 .btn-warning:active {
     background: var(--btnbghover);
     color: var(--btnfontcolorhover);
-    box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35);
+    /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
 }
 
 /* END BUTTON */
 
 .bg-success {
-
     font-size: 1rem;
-    background-color: var(#8bc34a)!important;
+    background-color: var(--btnbg)!important;
     color: var(--btnfontcolor)!important;
 }
 .bg-danger {
